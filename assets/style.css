@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(235, 18%, 26%);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+.container{
+  background-color: hsl(0, 0%, 100%);
+  margin: 150px auto;
+  /* margin-top: 100px; */
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* width: 50%; */
+  /* height: 50%; */
+}
+.cta{
+  padding: 35px 20px;
+  margin-top: 35px;
+  margin-left: 30px;
+}
+.cta h1{
+  font-size: 35px;
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.cta > p{
+  color: hsl(235, 18%, 26%);
+  margin-bottom: 10px;
+}
+.cta .point {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 20px;
+  color: hsl(235, 18%, 26%);
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.cta form{
+  margin-top: 30px;
+}
+.cta form label{
+  color: hsl(234, 29%, 20%);
+  font-weight: 400;
+}
+.cta form input{
+  width: auto;
+  font-weight: bold;
+  padding: 10px ;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+.cta form input:active{
+  background-color: hsl(235, 18%, 26%,0.1);
+}
+/* .subscribe{
+  padding: 10px 0px;
+} */
+form button{
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  width:100%;
+  border-radius: 8px;
+  height: 45px;
+  cursor: pointer;
+  padding:10px 0 ;
+  margin-top: 10px;
+}
+form button:hover{
+  background:linear-gradient(127deg, hsl(4, 100%, 67%)40%,hsl(17, 100%, 51%, 1)70%) ;
+}
+.stats {
+ padding: 15px 15px;
+}
+.success-modal {
+  /* display: none; */
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px 20px;
+  width: 50%;
+  display: grid;
+  place-content: center;
+  margin-left: 25%;
+
+}
+.success-modal img{
+  margin-bottom: 15px;
+}
+.success-modal h2{
+  margin-bottom: 15px;
+}
+.success-modal p{
+  margin-bottom: 15px;
+}
+.success-modal button{
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  width:100%;
+  border-radius: 8px;
+  height: 45px;
+  cursor: pointer;
+  padding:10px 0 ;
+  margin-top: 10px;
+}
+.success-modal button:hover{
+  background:linear-gradient(127deg, hsl(4, 100%, 67%)40%,hsl(17, 100%, 51%, 1)70%) ;
+}
+.hide{
+  display: none;
+}
+
+
+/* Mobile screen */
+@media screen and (max-width:760px) {
+  .stats source{
+
+  }
+}
+
