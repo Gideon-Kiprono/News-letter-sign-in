@@ -1,11 +1,29 @@
-const form = document.querySelector('form')
-card_1 = document.getElementById('card-1')
-card_2 = document.getElementById("sucess-desktop-modal");
+const containerE1 = document.getElementById("container")
+const ctaE1 = document.getElementById("cta");
+const statsE1 = document.getElementById("stats");
 
 
-form.addEventListener('submit', (e) => {
+const submitbtnE1 = document.getElementById("submit-btn");
+
+const successMsgE1 = document.getElementById("sucess-desktop-modal");
+const dismissSuccessMsg = document.getElementById("dismiss-msg");
+
+function validateEmail() {
+  successMsgE1.classList.remove('hide')
+  
+  ctaE1.style.display = "none"
+  statsE1.style.display= "none"
+
+}
+
+submitbtnE1.addEventListener("click", (e) => {
   e.preventDefault();
-  card_1.classlist.add('hide')
-  // Card_2.classlist.remove('hide')
+  validateEmail();
 })
+dismissSuccessMsg.addEventListener("click", (e) => {
+   successMsgE1.classList.add("hide");
+   ctaE1.style.display = "block";
+   statsE1.style.display = "block";
+})
+
 

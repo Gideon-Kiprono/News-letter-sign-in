@@ -123,8 +123,36 @@ form button:hover{
 
 /* Mobile screen */
 @media screen and (max-width:760px) {
-  .stats source{
-
+  body{
+    display: initial;
+    line-height: 1.4;
   }
+
+
+  .container{
+    height: initial;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0px 0px;
+    grid-template-columns: 1fr;
+  }
+  .cta{
+  /* padding: 35px 20px; */
+  display: grid;
+  margin-top: 0;
+  margin-left: 0;
+  grid-row: 2;
+}
+.stats{
+  top: 0;
+  left: 0;
+  right: 0;
+  grid-row: 1;
+  padding: 0 0;
+  width: 100%;
+}
+.stats img {
+  width: 100%;
+}
 }
 
